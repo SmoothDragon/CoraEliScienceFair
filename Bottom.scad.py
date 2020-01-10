@@ -43,7 +43,7 @@ press_circle = sd.circle(d=width-2*gap)
 press_oval = sd.square([length, width-2*gap], center=True)
 press_oval += sd.translate([-length/2,0])(press_circle)
 press_oval += sd.translate([length/2,0])(press_circle)
-press_oval = sd.linear_extrude(2*wall)(press_oval)
+press_oval = sd.linear_extrude(wall)(press_oval)
 press_piece = peg_oval + press_oval
 
 # print(sd.scad_render(center_piece))

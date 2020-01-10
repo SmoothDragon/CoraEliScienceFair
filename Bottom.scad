@@ -58,7 +58,7 @@ union() {
 			}
 		}
 	}
-	linear_extrude(height = 12.7000000000) {
+	linear_extrude(height = 6.3500000000) {
 		union() {
 			union() {
 				square(center = true, size = [203.2000000000, 30.9500000000]);
